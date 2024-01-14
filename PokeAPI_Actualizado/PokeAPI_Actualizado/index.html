@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="get" class="form-example">
+        <div class="form-example">
+          <label for="numPokemon">Numero pokemons: </label>
+          <input type="number" name="numPokemon" id="numPokemon" required min="1" max="500"/>
+          <button type="button" onclick="leerNumPokemon()">Enviar</button>
+
+          <!-- Nuevo campo de entrada y botón de búsqueda -->
+          <label for="searchPokemon">Buscar Pokémon: </label>
+          <input type="text" name="searchPokemon" id="searchPokemon" />
+          <button type="button" onclick="buscarPokemon()">Buscar</button>
+        </div>
+    </form>
+    <div id="card-container"></div>
+    <script src="main.js"></script>
+</body>
+</html>
